@@ -1,2 +1,11 @@
 @forward "theme";
 @forward "base/typography";
+@forward "components";
+
+@layer base {
+  body {
+    direction: rtl;
+    @apply font-iran;
+    @apply text-blueGray-700;
+  }
+}

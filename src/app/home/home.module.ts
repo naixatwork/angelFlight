@@ -2,10 +2,14 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {HomeComponent} from './home.component';
 import {RouterModule, Routes} from "@angular/router";
-import { HeroComponent } from './components/hero/hero.component';
+import {HeroComponent} from './components/hero/hero.component';
 import {MatIconModule} from "@angular/material/icon";
 import {MatButtonModule} from "@angular/material/button";
-import { ServicesComponent } from './components/services/services.component';
+import {ServicesComponent} from './components/services/services.component';
+import {VisaComponent} from './components/visa/visa.component';
+import {VisaService} from "./components/visa/visa.service";
+import {MatDividerModule} from "@angular/material/divider";
+import {MatRippleModule} from "@angular/material/core";
 
 const routes: Routes = [
   {
@@ -15,17 +19,21 @@ const routes: Routes = [
 ]
 
 @NgModule({
+  providers: [VisaService],
   declarations: [
     HomeComponent,
     HeroComponent,
-    ServicesComponent
+    ServicesComponent,
+    VisaComponent
   ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    MatIconModule,
-    MatButtonModule
-  ],
+    imports: [
+        CommonModule,
+        RouterModule.forChild(routes),
+        MatIconModule,
+        MatButtonModule,
+        MatDividerModule,
+        MatRippleModule
+    ],
 })
 export class HomeModule {
 }

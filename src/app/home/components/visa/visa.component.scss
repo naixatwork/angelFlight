@@ -1,0 +1,37 @@
+.world {
+  width: 100%;
+  height: 100%;
+  fill: #fff !important;
+
+  & g, path {
+    transition: fill 300ms ease-in-out;
+
+    &:hover {
+      fill: #9333ea !important;
+    }
+  }
+
+  & #IR {
+    fill: #FCD34D !important;
+  }
+}
+
+.visa {
+  &__types {
+    margin-top: -2rem;
+    .card {
+      @apply px-5 py-4 flex flex-shrink-0 justify-center items-center gap-3 rounded bg-amber-300 shadow;
+
+      &__title {
+        @apply w-full;
+      }
+    }
+  }
+}
+
+mat-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1 !important;
+}
