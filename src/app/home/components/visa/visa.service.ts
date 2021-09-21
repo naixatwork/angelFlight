@@ -49,7 +49,7 @@ export class VisaService {
         {
           id: 'SE',
           name: 'سوئد',
-          imageUrl: 'https://www.countryflags.io/SE/flat/48.png',
+          imageUrl: 'https://www.countryflags.io/ch/flat/48.png',
         },
         {
           id: 'FI',
@@ -109,7 +109,7 @@ export class VisaService {
         {
           id: 'SW',
           name: 'سوئیس',
-          imageUrl: 'https://www.countryflags.io/sw/flat/48.png',
+          imageUrl: 'https://www.countryflags.io/ch/flat/48.png',
         },
         {
           id: 'FR',
@@ -139,7 +139,7 @@ export class VisaService {
         {
           id: 'DN',
           name: 'دانمارک',
-          imageUrl: 'https://www.countryflags.io/dn/flat/48.png',
+          imageUrl: 'https://www.countryflags.io/dk/flat/48.png',
         },
         {
           id: 'BG',
@@ -241,7 +241,49 @@ export class VisaService {
       type: 'invest',
       name: 'سرمایه گذاری',
       icon: 'account_balance',
-      countries: []
+      countries: [
+        {
+          id: 'CA',
+          name: 'کانادا',
+          imageUrl: 'https://www.countryflags.io/ca/flat/48.png',
+        },
+        {
+          id: 'AU',
+          name: 'استرالیا',
+          imageUrl: 'https://www.countryflags.io/au/flat/48.png',
+        },
+        {
+          id: 'NZ',
+          name: 'نیوزیلند',
+          imageUrl: 'https://www.countryflags.io/nz/flat/48.png',
+        },
+        {
+          id: 'DE',
+          name: 'آلمان',
+          imageUrl: 'https://www.countryflags.io/de/flat/48.png',
+        },
+        {
+          id: 'SE',
+          name: 'سوئد',
+          imageUrl: 'https://www.countryflags.io/ch/flat/48.png',
+        },
+        {
+          id: 'SK',
+          name: 'اسلواکی',
+          imageUrl: 'https://www.countryflags.io/sl/flat/48.png',
+        },
+        {
+          id: 'BG',
+          name: 'بلغارستان',
+          imageUrl: 'https://www.countryflags.io/bg/flat/48.png',
+        },
+        {
+
+          id: 'EE',
+          name: 'استونی',
+          imageUrl: 'https://www.countryflags.io/ee/flat/48.png',
+        }
+      ]
     }
   ]
 
