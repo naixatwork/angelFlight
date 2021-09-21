@@ -1,0 +1,78 @@
+:host {
+  isolation: isolate;
+  margin-top: -5rem;
+  @apply flex flex-col justify-center items-center p-5 gap-5 mb-5;
+}
+
+.card {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    z-index: -1;
+    border-radius: 1rem;
+  }
+
+  &--visa {
+    background: linear-gradient(
+        0deg,
+        #9333ea 35%,
+        rgba(126, 34, 206, 0.4) 100%
+    );
+    box-shadow: 0 6px 6px rgba(126, 34, 206, 0.25);
+
+    &::before {
+      background-image: url('../../../../assets/images/au.png');
+    }
+  }
+
+  &--global {
+    background: linear-gradient(0deg, #f43f5e 35%, rgba(190, 18, 60, 0.4) 100%);
+    box-shadow: 0 6px 6px rgba(190, 18, 60, 0.25);
+
+    &::before {
+      background-image: url('../../../../assets/images/paris.png');
+    }
+  }
+
+  &--local {
+    background: linear-gradient(0deg, #d97706 35%, rgba(180, 83, 9, 0.4) 100%);
+    box-shadow: 0 6px 6px rgba(161, 98, 7, 0.25);
+
+    &::before {
+      background-image: url('../../../../assets/images/ir.png');
+    }
+  }
+
+  &--license {
+    background: linear-gradient(0deg, #0ea5e9 30%, rgba(3, 105, 161, 0.4) 100%);
+    box-shadow: 0 6px 6px rgba(3, 105, 161, 0.25);
+
+    &::before {
+      background-image: url('../../../../assets/images/uae.png');
+    }
+  }
+
+  &__button {
+    &--visa {
+      @apply text-purple-700;
+    }
+
+    &--global {
+      @apply text-red-500;
+    }
+
+    &--local {
+      @apply text-amber-600;
+    }
+
+    &--license {
+      @apply text-sky-500;
+    }
+  }
+}

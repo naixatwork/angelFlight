@@ -2,6 +2,10 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {HomeComponent} from './home.component';
 import {RouterModule, Routes} from "@angular/router";
+import { HeroComponent } from './components/hero/hero.component';
+import {MatIconModule} from "@angular/material/icon";
+import {MatButtonModule} from "@angular/material/button";
+import { ServicesComponent } from './components/services/services.component';
 
 const routes: Routes = [
   {
@@ -12,11 +16,15 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    HeroComponent,
+    ServicesComponent
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    MatIconModule,
+    MatButtonModule
   ],
 })
 export class HomeModule {
