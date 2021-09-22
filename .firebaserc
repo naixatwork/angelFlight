@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "ofog-fd176"
+  },
+  "targets": {
+    "ofog-fd176": {
+      "hosting": {
+        "website": [
+          "ofog-fd176"
+        ]
+      }
+    }
+  }
+}
