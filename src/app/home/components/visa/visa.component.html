@@ -2006,7 +2006,7 @@
       </svg>
     </div>
     <div class="flex overflow-auto gap-5 py-1 px-5 mb-5 lg:container lg:mx-auto lg:p-0">
-      <button *ngFor="let country of visaService.selectedVisa$.value.countries"
+      <button (click)="crispService.openChat()" *ngFor="let country of visaService.selectedVisa$.value.countries"
               class="rounded flex-shrink-0 flex px-2 justify-center items-center gap-2 bg-blue-300 shadow"
               mat-ripple>
         <img [alt]="country.name" [src]="country.imageUrl" class="w-full">

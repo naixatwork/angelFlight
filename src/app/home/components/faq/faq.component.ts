@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {CrispService} from "../../../services/crisp.service";
 
 @Component({
   selector: 'app-faq',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FAQComponent implements OnInit {
 
-  constructor() { }
+  constructor(public readonly crispService: CrispService) {
+  }
 
   ngOnInit(): void {
   }

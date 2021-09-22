@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {VisaService} from "./visa.service";
 import {Visa} from "./visa.model";
+import {CrispService} from "../../../services/crisp.service";
 
 @Component({
   selector: 'app-visa',
@@ -10,7 +11,7 @@ import {Visa} from "./visa.model";
 export class VisaComponent implements OnInit, AfterViewInit {
   @ViewChild('world') world!: ElementRef;
 
-  constructor(public readonly visaService: VisaService) {
+  constructor(public readonly visaService: VisaService, public readonly crispService: CrispService) {
   }
 
   ngOnInit(): void {
@@ -23,7 +24,6 @@ export class VisaComponent implements OnInit, AfterViewInit {
 
   private selectedVisaInit() {
     this.visaService.selectedVisa$.subscribe(() => {
-      console.log('dastan')
       this.worldInit();
     })
   }
