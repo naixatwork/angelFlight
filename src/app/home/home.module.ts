@@ -10,6 +10,8 @@ import {VisaComponent} from './components/visa/visa.component';
 import {VisaService} from "./components/visa/visa.service";
 import {MatDividerModule} from "@angular/material/divider";
 import {MatRippleModule} from "@angular/material/core";
+import { FAQComponent } from './components/faq/faq.component';
+import {MatExpansionModule} from "@angular/material/expansion";
 
 const routes: Routes = [
   {
@@ -24,7 +26,8 @@ const routes: Routes = [
     HomeComponent,
     HeroComponent,
     ServicesComponent,
-    VisaComponent
+    VisaComponent,
+    FAQComponent
   ],
     imports: [
         CommonModule,
@@ -32,7 +35,8 @@ const routes: Routes = [
         MatIconModule,
         MatButtonModule,
         MatDividerModule,
-        MatRippleModule
+        MatRippleModule,
+        MatExpansionModule
     ],
 })
 export class HomeModule {
