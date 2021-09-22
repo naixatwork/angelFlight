@@ -1,10 +1,14 @@
 :host {
   isolation: isolate;
   margin-top: -5rem;
+  @apply container mx-auto;
   @apply flex flex-col justify-center items-center p-5 gap-5 mb-5;
+  @apply md:flex-row md:overflow-auto md:justify-start lg:p-0;
 }
 
 .card {
+  @apply flex-shrink-0 flex-auto;
+  max-width: 335px;
   position: relative;
 
   &::before {

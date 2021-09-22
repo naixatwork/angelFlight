@@ -42,11 +42,6 @@ export class VisaService {
           imageUrl: 'https://www.countryflags.io/de/flat/48.png',
         },
         {
-          id: 'AT',
-          name: 'اتریش',
-          imageUrl: 'https://www.countryflags.io/at/flat/48.png',
-        },
-        {
           id: 'SE',
           name: 'سوئد',
           imageUrl: 'https://www.countryflags.io/ch/flat/48.png',
@@ -65,11 +60,6 @@ export class VisaService {
           id: 'NR',
           name: 'نروژ',
           imageUrl: 'https://www.countryflags.io/no/flat/48.png',
-        },
-        {
-          id: 'AT',
-          name: 'اتریش',
-          imageUrl: 'https://www.countryflags.io/at/flat/48.png',
         },
         {
           id: 'ES',
@@ -99,7 +89,7 @@ export class VisaService {
         {
           id: 'HU',
           name: 'مجارستان',
-          imageUrl: 'https://www.countryflags.io/ru/flat/48.png',
+          imageUrl: 'https://www.countryflags.io/hu/flat/48.png',
         },
         {
           id: 'NL',
@@ -115,11 +105,6 @@ export class VisaService {
           id: 'FR',
           name: 'فرانسه',
           imageUrl: 'https://www.countryflags.io/fr/flat/48.png',
-        },
-        {
-          id: 'RU',
-          name: 'روسیه',
-          imageUrl: 'https://www.countryflags.io/ru/flat/48.png',
         },
         {
           id: 'GR',
@@ -177,7 +162,7 @@ export class VisaService {
         {
           id: 'SW',
           name: 'سوئیس',
-          imageUrl: 'https://www.countryflags.io/sw/flat/48.png',
+          imageUrl: 'https://www.countryflags.io/ch/flat/48.png',
         },
         {
           id: 'ES',
@@ -265,7 +250,7 @@ export class VisaService {
         {
           id: 'SE',
           name: 'سوئد',
-          imageUrl: 'https://www.countryflags.io/ch/flat/48.png',
+          imageUrl: 'https://www.countryflags.io/se/flat/48.png',
         },
         {
           id: 'SK',
